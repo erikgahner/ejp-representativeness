@@ -248,7 +248,7 @@ df_direct %>%
   ggtitle("Trait: Openness") +
   coord_flip()
 
-ggsave("../output/results-trait-Openness.pdf", height=8, width=6)
+ggsave("results-trait-Openness.pdf", height=8, width=6)
 
 df_direct %>%
   filter(trait == "Conscientiousness" & !is.na(est)) %>%
@@ -264,7 +264,7 @@ df_direct %>%
   ggtitle("Trait: Conscientiousness") +
   coord_flip()
 
-ggsave("../output/results-trait-Conscientiousness.pdf", height=8, width=6)
+ggsave("results-trait-Conscientiousness.pdf", height=8, width=6)
 
 df_direct %>%
   filter(trait == "Extraversion" & !is.na(est)) %>%
@@ -280,7 +280,7 @@ df_direct %>%
   ggtitle("Trait: Extraversion") +
   coord_flip()
 
-ggsave("../output/results-trait-Extraversion.pdf", height=8, width=6)
+ggsave("results-trait-Extraversion.pdf", height=8, width=6)
 
 df_direct %>%
   filter(trait == "Agreeableness" & !is.na(est)) %>%
@@ -296,7 +296,7 @@ df_direct %>%
   ggtitle("Trait: Agreeableness") +
   coord_flip()
 
-ggsave("../output/results-trait-Agreeableness.pdf", height=8, width=6)
+ggsave("results-trait-Agreeableness.pdf", height=8, width=6)
 
 df_direct %>%
   filter(trait == "Neuroticism" & !is.na(est)) %>%
@@ -312,7 +312,7 @@ df_direct %>%
   ggtitle("Trait: Neuroticism") +
   coord_flip()
 
-ggsave("../output/results-trait-Neuroticism.pdf", height=8, width=6)
+ggsave("results-trait-Neuroticism.pdf", height=8, width=6)
 
 
 # Create results data frame
@@ -540,8 +540,8 @@ fig_all_pvals <- ggplot(df, aes(x=pval)) +
 
 fig_all_pvals %T>%
   print() %T>% 
-  ggsave("../output/fig1-results-all_pvals.pdf", plot = ., height=4, width=8) %T>%
-  ggsave("../output/fig1-results-all_pvals.png", plot = ., height=4, width=8)
+  ggsave("fig1-results-all_pvals.pdf", plot = ., height=4, width=8) %T>%
+  ggsave("fig1-results-all_pvals.png", plot = ., height=4, width=8)
 
 
 df <- df %>%
@@ -569,7 +569,7 @@ df %>%
   ggtitle("Trait: Openness\nModerator: Student") +
   coord_flip()
 
-ggsave("../output/results-student_Openness.pdf", height=7, width=6)
+ggsave("results-student_Openness.pdf", height=7, width=6)
 
 df %>%
   filter(trait == "Openness" & mod == "internet" & !is.na(est)) %>%
@@ -586,7 +586,7 @@ df %>%
   coord_flip()
 
 
-ggsave("../output/results-internet_Openness.pdf", height=7, width=6)
+ggsave("results-internet_Openness.pdf", height=7, width=6)
 
 
 df %>%
@@ -603,7 +603,7 @@ df %>%
   ggtitle("Trait: Conscientiousness\nModerator: Student") +
   coord_flip()
 
-ggsave("../output/results-student_Conscientiousness.pdf", height=7, width=6)
+ggsave("results-student_Conscientiousness.pdf", height=7, width=6)
 
 df %>%
   filter(trait == "Conscientiousness" & mod == "internet" & !is.na(est)) %>%
@@ -620,7 +620,7 @@ df %>%
   coord_flip()
 
 
-ggsave("../output/results-internet_Conscientiousness.pdf", height=7, width=6)
+ggsave("results-internet_Conscientiousness.pdf", height=7, width=6)
 
 df %>%
   filter(trait == "Extraversion" & mod == "student" & !is.na(est)) %>%
@@ -636,7 +636,7 @@ df %>%
   ggtitle("Trait: Extraversion\nModerator: Student") +
   coord_flip()
 
-ggsave("../output/results-student_Extraversion.pdf", height=7, width=6)
+ggsave("results-student_Extraversion.pdf", height=7, width=6)
 
 df %>%
   filter(trait == "Extraversion" & mod == "internet" & !is.na(est)) %>%
@@ -653,7 +653,7 @@ df %>%
   coord_flip()
 
 
-ggsave("../output/results-internet_Extraversion.pdf", height=7, width=6)
+ggsave("results-internet_Extraversion.pdf", height=7, width=6)
 
 df %>%
   filter(trait == "Agreeableness" & mod == "student" & !is.na(est)) %>%
@@ -669,7 +669,7 @@ df %>%
   ggtitle("Trait: Agreeableness\nModerator: Student") +
   coord_flip()
 
-ggsave("../output/results-student_Agreeableness.pdf", height=7, width=6)
+ggsave("results-student_Agreeableness.pdf", height=7, width=6)
 
 df %>%
   filter(trait == "Agreeableness" & mod == "internet" & !is.na(est)) %>%
@@ -685,7 +685,7 @@ df %>%
   ggtitle("Trait: Agreeableness\nModerator: Internet") +
   coord_flip()
 
-ggsave("../output/results-internet_Agreeableness.pdf", height=7, width=6)
+ggsave("results-internet_Agreeableness.pdf", height=7, width=6)
 
 df %>%
   filter(trait == "Neuroticism" & mod == "student" & !is.na(est)) %>%
@@ -701,7 +701,7 @@ df %>%
   ggtitle("Trait: Neuroticism\nModerator: Student") +
   coord_flip()
 
-ggsave("../output/results-student_Neuroticism.pdf", height=7, width=6)
+ggsave("results-student_Neuroticism.pdf", height=7, width=6)
 
 df %>%
   filter(trait == "Neuroticism" & mod == "internet" & !is.na(est)) %>%
@@ -717,7 +717,7 @@ df %>%
   ggtitle("Trait: Neuroticism\nModerator: Internet") +
   coord_flip()
 
-ggsave("../output/results-internet_Neuroticism.pdf", height=7, width=6)
+ggsave("results-internet_Neuroticism.pdf", height=7, width=6)
 
 df$est_abs <- abs(df$est)
 df %>% 
@@ -741,8 +741,8 @@ fig2_student <- df %>%
 
 fig2_student %T>%
   print() %T>% 
-  ggsave("../output/fig2-results-student.pdf", plot = ., height=7, width=9) %T>%
-  ggsave("../output/fig2-results-student.png", plot = ., height=7, width=9)
+  ggsave("fig2-results-student.pdf", plot = ., height=7, width=9) %T>%
+  ggsave("fig2-results-student.png", plot = ., height=7, width=9)
 
 
 fig3_internet <- df %>%
@@ -761,8 +761,8 @@ fig3_internet <- df %>%
 
 fig3_internet %T>%
   print() %T>% 
-  ggsave("../output/fig3-results-internet.pdf", plot = ., height=7, width=9) %T>%
-  ggsave("../output/fig3-results-internet.png", plot = ., height=7, width=9)
+  ggsave("fig3-results-internet.pdf", plot = ., height=7, width=9) %T>%
+  ggsave("fig3-results-internet.png", plot = ., height=7, width=9)
 
 # Meta-analytical estimates
 
@@ -2207,7 +2207,7 @@ anes1012 %>%
   drop_na(internet) %>%
   select(internet, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
          ideology, polintr, poleff, involvement, polpar, media, knowledge) %>%
-  stargazer(out="../output/descriptives/tab-anes1012-descriptive.htm",
+  stargazer(out="tab-anes1012-descriptive.htm",
             covariate.labels = c("Internet", 
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge"),
@@ -2225,14 +2225,14 @@ anes1012 %>%
             covariate.labels = c("Internet", 
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge"),
-            type="text", digits = 2, out="../output/descriptives/tab-anes1012-cormatrix.htm")
+            type="text", digits = 2, out="tab-anes1012-cormatrix.htm")
 
 
 anes12 %>% 
   filter(!is.na(internet) & !is.na(student)) %>%
   select(internet, student, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
          ideology, polintr, poleff, involvement, polpar, media, knowledge, poltr, stfdem) %>%
-  stargazer(out="../output/descriptives/tab-anes12-descriptive.htm",
+  stargazer(out="tab-anes12-descriptive.htm",
             covariate.labels = c("Internet", "Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
@@ -2250,13 +2250,13 @@ anes12 %>%
             covariate.labels = c("Internet", "Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
-            type="text", digits = 2, out="../output/descriptives/tab-anes12-cormatrix.htm")
+            type="text", digits = 2, out="tab-anes12-cormatrix.htm")
 
 anes16 %>% 
   filter(!is.na(internet)) %>%
   select(internet, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
          ideology, polintr, poleff, involvement, polpar, media, knowledge, poltr, stfdem) %>%
-  stargazer(out="../output/descriptives/tab-anes16-descriptive.htm",
+  stargazer(out="tab-anes16-descriptive.htm",
             covariate.labels = c("Internet",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
@@ -2274,14 +2274,14 @@ anes16 %>%
             covariate.labels = c("Internet",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
-            type="text", digits = 2, out="../output/descriptives/tab-anes16-cormatrix.htm")
+            type="text", digits = 2, out="tab-anes16-cormatrix.htm")
 
 
 liss %>% 
   filter(!is.na(internet) & !is.na(student)) %>%
   select(internet, student, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
          ideology, polintr, poleff, involvement, polpar, media, poltr, stfdem) %>%
-  stargazer(out="../output/descriptives/tab-liss-descriptive.htm",
+  stargazer(out="tab-liss-descriptive.htm",
             covariate.labels = c("Internet", "Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Political trust", "Satisfaction democracy"),
@@ -2298,14 +2298,14 @@ liss %>%
             covariate.labels = c("Internet", "Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Political trust", "Satisfaction democracy"),
-            type="text", digits = 2, out="../output/descriptives/tab-liss-cormatrix.htm")
+            type="text", digits = 2, out="tab-liss-cormatrix.htm")
 
 
 bes %>% 
   filter(!is.na(student)) %>%
   select(student, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
          ideology, polintr, poleff, involvement, polpar, media, knowledge, poltr, stfdem) %>%
-  stargazer(out="../output/descriptives/tab-bes-descriptive.htm",
+  stargazer(out="tab-bes-descriptive.htm",
             covariate.labels = c("Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
@@ -2322,7 +2322,7 @@ bes %>%
             covariate.labels = c("Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
-            type="text", digits = 2, out="../output/descriptives/tab-bes-cormatrix.htm")
+            type="text", digits = 2, out="tab-bes-cormatrix.htm")
 
 
 
@@ -2330,7 +2330,7 @@ shp %>%
   filter(!is.na(student)) %>%
   select(student, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
          ideology, polintr, polpar, poltr, stfdem) %>%
-  stargazer(out="../output/descriptives/tab-shp-descriptive.htm",
+  stargazer(out="tab-shp-descriptive.htm",
             covariate.labels = c("Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Participation", "Political trust", "Satisfaction democracy"),
@@ -2347,7 +2347,7 @@ shp %>%
             covariate.labels = c("Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Participation", "Political trust", "Satisfaction democracy"),
-            type="text", digits = 2, out="../output/descriptives/tab-shp-cormatrix.htm")
+            type="text", digits = 2, out="tab-shp-cormatrix.htm")
 
 
 desc_lapop <- function(x){
@@ -2355,7 +2355,7 @@ desc_lapop <- function(x){
     filter(!is.na(internet) & !is.na(student) & !is.na(openness) & cntry == x) %>%
     select(internet, student, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
            ideology, polintr, poleff, involvement, polpar, media, knowledge, poltr, stfdem) %>%
-    stargazer(out= paste0("../output/descriptives/lapop/tab-descriptive-", x, ".htm"),
+    stargazer(out= paste0("lapop/tab-descriptive-", x, ".htm"),
               covariate.labels = c("Internet", "Student",
                                    "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                    "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
@@ -2376,7 +2376,7 @@ corm_lapop <- function(x){
               covariate.labels = c("Internet", "Student",
                                    "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                    "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
-              type="text", digits = 2, out=paste0("../output/descriptives/lapop/tab-cormatrix-", x, ".htm")
+              type="text", digits = 2, out=paste0("lapop/tab-cormatrix-", x, ".htm")
     )
 }
 
@@ -2387,7 +2387,7 @@ sels %>%
   filter(!is.na(student) & !is.na(openness)) %>%
   select(student, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
          ideology, polintr, poleff, involvement, polpar, media, knowledge, poltr, stfdem) %>%
-  stargazer(out="../output/descriptives/tab-selects-descriptive.htm",
+  stargazer(out="tab-selects-descriptive.htm",
             covariate.labels = c("Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
@@ -2404,7 +2404,7 @@ sels %>%
             covariate.labels = c("Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Political trust", "Satisfaction democracy"),
-            type="text", digits = 2, out="../output/descriptives/tab-selects-cormatrix.htm")
+            type="text", digits = 2, out="tab-selects-cormatrix.htm")
 
 
 
@@ -2412,7 +2412,7 @@ nzes %>%
   filter(!is.na(internet) & !is.na(openness)) %>%
   select(internet, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
          ideology, polintr, poleff, involvement, polpar, media, knowledge, stfdem) %>%
-  stargazer(out="../output/descriptives/tab-nzes-descriptive.htm",
+  stargazer(out="tab-nzes-descriptive.htm",
             covariate.labels = c("Internet",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Satisfaction democracy"),
@@ -2429,14 +2429,14 @@ nzes %>%
             covariate.labels = c("Internet",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Satisfaction democracy"),
-            type="text", digits = 2, out="../output/descriptives/tab-nzes-cormatrix.htm")
+            type="text", digits = 2, out="tab-nzes-cormatrix.htm")
 
 
 ces %>% 
   filter(!is.na(student) & !is.na(openness)) %>%
   select(student, openness, conscientiousness, extraversion, agreeableness, neuroticism, 
          ideology, polintr, poleff, involvement, polpar, media, knowledge, stfdem) %>%
-  stargazer(out="../output/descriptives/tab-ces-descriptive.htm",
+  stargazer(out="tab-ces-descriptive.htm",
             covariate.labels = c("Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Satisfaction democracy"),
@@ -2453,7 +2453,7 @@ ces %>%
             covariate.labels = c("Student",
                                  "Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", 
                                  "Left-right ideology", "Interest", "Efficacy", "Involvement", "Participation", "Media use", "Knowledge", "Satisfaction democracy"),
-            type="text", digits = 2, out="../output/descriptives/tab-ces-cormatrix.htm")
+            type="text", digits = 2, out="tab-ces-cormatrix.htm")
 
 
 # Table 1 sample sizes
@@ -2588,3 +2588,6 @@ df %>%
   group_by(trait) %>%
   filter(pval < 0.125, mod == "internet") %>%
   summarise(n())
+
+# Create and save sessionInfo.txt
+writeLines(capture.output(sessionInfo()), "sessionInfo.txt")
